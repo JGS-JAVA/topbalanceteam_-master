@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Game 점수 확인 불가</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+<div class="balance-game-error-container">
+    <th:block th:replace="~{layout/header :: header}"></th:block>
+
+    <main class="error-content">
+        <h1 class="error-title">기존의 게임 데이터를 가져올 수 없습니다.</h1>
+        <h2 class="error-subtitle">아래 보기 중 선택해주세요.</h2>
+        <div class="error-links">
+            <a href="/" class="error-link">메인 화면으로 돌아가기</a>
+            <a href="/balancegame" class="error-link">게임 화면으로 돌아가기</a>
+        </div>
+    </main>
+
+    <th:block th:replace="~{layout/footer :: footer}"></th:block>
+</div>
+</body>
+</html>
